@@ -1,0 +1,480 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.navbar{
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 65%;
+    
+}
+
+.slider{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 90%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #000;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+button{
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    border-bottom: solid 2px black;
+    border: transparent;
+    transition: all 0.3s ease-out;
+}
+
+button:hover .slider{
+    width: 100%;
+}
+
+button:hover span{
+    color: #676567;
+}
+
+.self{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-bottom: solid 2px black;
+}
+
+.aboutHeading{
+    margin-left: 150px;
+}
+
+.photo{
+    width: 350px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url("profile.jpg");  
+    background-position: 48% 55%;
+}
+
+.photo img{
+    position: relative;
+    top: -20;
+}
+
+.introduction{
+    height: 410px;
+    border-bottom: solid 2px black;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    margin-top: 50px;
+    margin-left: 8px;
+}
+
+.name{
+    margin-left: 20px;
+    font-weight:bolder;
+    animation: 1s rollup infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes rollup {
+    0%{
+        translate: 0px 0px;
+        opacity: 1;  
+    }
+    50%{
+        translate: 0px -50px;
+        opacity: 0;
+    }
+    100%{
+        translate: 0px 0px;
+    }
+}
+
+.scroller{
+    margin-top: -220px;
+    margin-left: 48%;
+    font-size: 80px;
+    font-weight: bolder;
+    animation: 1s rollup2 infinite;
+     
+}
+
+@keyframes rollup2 {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        translate: 0px -50px;
+        opacity: 1;
+        
+    }
+    100%{
+        translate: 0px 0px;
+        opacity: 0;
+    } 
+}
+
+h2{
+    margin-top: 210px;
+}
+
+.explanation{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.projectHeading{
+    margin-left: 100px;
+}
+
+.projects{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+.project1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 20%;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.label1{
+    margin-top: 20px;
+    border: 2px solid black;
+    width: 190px;
+    height: 200px;
+    background-image: url("project1Photo.jpeg");
+    background-position: 50% 20%;
+}
+
+.heading1{
+    margin-left: 21px;
+}
+
+.seemore{
+    margin-left: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.seemore:hover{
+    background-color:black;
+    color: white;
+}
+
+.project2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 20%;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.label2{
+    margin-top: 20px;
+    border: 2px solid black;
+    width: 190px;
+    height: 200px;
+    background-image: url("project2Photo.png");
+    background-position: 50% 40%;
+}
+
+.heading2{
+    margin-left: 15px;
+}
+
+.project3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 20%;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.label3{
+    margin-top: 20px;
+    border: 2px solid black;
+    width: 190px;
+    height: 200px;
+    background-image: url("project3photo.jpg");
+    background-position: 40% 40%;
+}
+
+.seemore3{
+    margin-left: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.seemore3:hover{
+    background-color:black;
+    color: white;
+}
+
+.heading3{
+    margin-left: 10px;
+    margin-top: 210px;
+}
+
+.heading3xtn{
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+.project4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 20%;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.label4{
+    margin-top: 20px;
+    border: 2px solid black;
+    width: 190px;
+    height: 200px;
+    background-image: url("project4Photo.png");
+    background-position: 55% 20%;
+}
+
+.heading4{
+    margin-top: 210px;
+}
+
+.heading4xtn{
+    margin-left: 80px;
+    margin-top: -20px;
+}
+
+.seemore4{
+    margin-left: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.seemore4:hover{
+    background-color:black;
+    color: white;
+}
+
+.findmeHeading{
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.logos{
+    height: 100px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.linkedinLogo{
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    font-size: 35px;
+    display:inline;
+}
+
+.linkedinLogo:hover{
+    background-color: black;
+    color: white;
+}
+
+.githubLogo{
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    font-size: 35px;
+    display:inline;
+    margin-left: 20px;
+}
+
+.githubLogo:hover{
+    background-color: black;
+    color: white;
+}
+
+.skillHeading{
+    margin-left: 120px;
+}
+
+.skill{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+.cpp{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url("cppLogo.png");
+    background-position: 50% 50%;
+}
+
+.java{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url("javaLogo.png");
+    background-position: 50% 50%;
+    margin-left: 15px;
+}
+
+.java img{
+    width: auto;
+    height: auto;
+    margin-left: 15px;
+}
+
+.python{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url("pythonLogo.jpeg");
+    background-position: 40%;
+    margin-left: 15px;
+}
+
+.htmL{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url("htmlLogo.jpg");
+    background-position: 50% 43%;
+    margin-left: 15px;
+}
+
+.cSs{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url("cssLogo.png");
+    background-position: 45%;
+    margin-left: 15px;
+}
+
+.jScript{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url("jsLogo.png");
+    background-position: 70% 85%;
+    margin-left: 15px;
+}
+
+.lastHeading{
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.connect{
+    margin: auto;
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.connectName{
+    height: 20px;
+    margin-top: 70px;
+    margin-left: 20px;
+    border: transparent;
+    border-bottom: 2px solid black;
+    font-size: 19px;
+}
+
+.connectEmail{
+    height: 20px;
+    margin-top: 10px; 
+    margin-left: 130px;
+    border: transparent;
+    border-bottom: 2px solid black;
+    font-size: 19px;
+    position: relative;
+}
+
+.Name{
+    display: flex;
+    justify-content: center;
+}
+
+.titleOne{
+    margin-top: 70px;
+}
+
+.titleTwo{
+    margin-top: 10px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+
+.submit{
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 135px;
+}
+
+.submit:hover{
+    background-color: black;
+    color: white;
+}
