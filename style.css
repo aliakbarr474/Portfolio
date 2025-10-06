@@ -478,3 +478,197 @@ h2{
     background-color: black;
     color: white;
 }
+
+@media (max-width: 1024px) {
+    .navbar {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .introduction {
+        height: auto;
+        text-align: center;
+    }
+
+    .intro {
+        font-size: 60px;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .scroller {
+        margin: 0;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .self {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .photo {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .explanation {
+        font-size: 18px;
+        margin: 0 20px;
+    }
+
+    .projects {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .projects > div {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .skill {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+    }
+
+    .skill button {
+        width: 120px;
+        height: 120px;
+    }
+
+    .connect {
+        width: 350px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .submit {
+        margin-left: 100px;
+    }
+}
+
+/* 📱 Small devices (phones, up to 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .navbar button {
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    .intro {
+        font-size: 45px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scroller {
+        font-size: 35px;
+    }
+
+    .aboutHeading,
+    .projectHeading,
+    .skillHeading {
+        margin: 0;
+        text-align: center;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects > div {
+        width: 80%;
+        height: auto;
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .explanation {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .findmeHeading,
+    .lastHeading {
+        font-size: 50px;
+    }
+
+    .logos {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .skill {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .connect {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .connect input {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .submit {
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+/* 📱 Extra small devices (up to 480px) */
+@media (max-width: 480px) {
+    .intro {
+        font-size: 35px;
+    }
+
+    .scroller {
+        font-size: 25px;
+    }
+
+    .projects > div {
+        width: 90%;
+    }
+
+    .skill button {
+        width: 100px;
+        height: 100px;
+    }
+
+    .connect {
+        width: 95%;
+    }
+
+    .connectName,
+    .connectEmail {
+        font-size: 16px;
+        width: 90%;
+    }
+}
